@@ -1,3 +1,4 @@
+/*Picture present in qestion pdf */
 class Point {
     private double xCo, yCo;
 

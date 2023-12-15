@@ -1,57 +1,48 @@
-class Point {
-    private double xCo, yCo;
+/*  Demonstrate the dynamic binding by modifying question 3. */
+class point {
+    protected double xCo, yCo;
 
-    public Point(double x, double y) {
-        this.xCo = x;
-        this.yCo = y;
+    public point() {
+        xCo = 4;
+        yCo = 2;
     }
 
-    public void print() {
-        System.out.println("Point: (" + xCo + ", " + yCo + ")");
-    }
-}
-
-class Circle extends Point {
-    private double radius;
-
-    public Circle(double x, double y, double radius) {
-        super(x, y);
-        this.radius = radius;
-    }
-
-    @Override
-    public void print() {
-        super.print();
-        System.out.println("Radius: " + radius);
+    void print() {
+        System.out.println("point");
     }
 }
 
-class Cylinder extends Circle {
-    private double height;
+class circle extends point {
+    protected double r;
 
-    public Cylinder(double x, double y, double radius, double height) {
-        super(x, y, radius);
-        this.height = height;
+    public circle() {
+        super();
+        double a = xCo * xCo - yCo * yCo;
+        r = Math.sqrt(a);
     }
 
-    @Override
-    public void print() {
-        super.print();
-        System.out.println("Height: " + height);
+    void print() {
+        System.out.println("radius");
     }
 }
 
-public class Shapedynamic {
+class cylinder extends circle {
+    protected double height;
+
+    public cylinder() {
+        super();
+        height = 10;
+    }
+
+    void print() {
+        System.out.println("height");
+    }
+}
+
+class Shapedynamic {
     public static void main(String[] args) {
-        Point point1 = new Circle(2.0, 3.0, 4.0); // Upcasting
-        Point point2 = new Cylinder(5.0, 6.0, 7.0, 10.0); // Upcasting
-
-        // Demonstrate dynamic binding
-        printInfo(point1);
-        printInfo(point2);
+        circle c = new cylinder();
+        c.print();
     }
 
-    private static void printInfo(Point point) {
-        point.print(); // Calls the overridden method based on the actual object type
-    }
 }
