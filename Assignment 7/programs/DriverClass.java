@@ -1,3 +1,9 @@
+
+/*  Create a Package mypack which contains one class Display where constructor will print the the data which it will be received. The data may be int, float, int[], String, String[].
+Design a driver class outside the package where Display class of mypack will be imported. 
+When object of Display class will be created it will call respective constructor. Demonstrate 
+all the constructors in driver class.
+ */
 import mypack.Display;
 
 public class DriverClass {
