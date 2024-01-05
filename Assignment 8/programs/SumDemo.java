@@ -45,5 +45,6 @@ class SumDemo {
             System.out.print(e);
         }
         System.out.println("Sum of the " + n + "numbers:" + Global.sum);
+        sc.close();
     }
 }

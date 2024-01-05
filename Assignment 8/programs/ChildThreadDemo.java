@@ -39,7 +39,6 @@ class ChildThreadDemo {
                 Thread.sleep(500);
                 if (i % 2 == 0)
                     System.out.println("Parent:" + i);
-
             }
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted.");

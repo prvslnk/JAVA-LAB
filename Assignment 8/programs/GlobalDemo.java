@@ -54,6 +54,6 @@ class GlobalDemo {
             System.out.print(e);
         }
         System.out.println(Global.num);
-
+        sc.close();
     }
 }
