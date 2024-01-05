@@ -14,5 +14,6 @@ public class DriverClass {
         Display display4 = new Display("Hello, World!");
         Display display5 = new Display(new String[] { "Java", "is", "fun" });
 
+        // You can create and use more Display objects as needed
     }
 }
