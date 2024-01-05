@@ -30,7 +30,7 @@ class ChildThreadDemo {
     public static void main(String args[]) {
         int n1, n2;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter two numbers:");
+        System.out.print("Enter two numbers:");
         n1 = sc.nextInt();
         n2 = sc.nextInt();
         new ChildThread(n1, n2); // create a new thread
@@ -44,5 +44,6 @@ class ChildThreadDemo {
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted.");
         }
+        sc.close();
     }
 }
