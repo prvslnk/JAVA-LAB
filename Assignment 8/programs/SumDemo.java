@@ -33,6 +33,7 @@ class SumDemo {
         n = sc.nextInt();
         System.out.println("Enter the no. of threads:");
         m = sc.nextInt();
+        sc.close();
         ChildThread ct[] = new ChildThread[m];
         for (i = 0; i < m - 1; i++)
             ct[i] = new ChildThread((n / m) * i + 1, (n / m) * (i + 1));
@@ -44,6 +45,5 @@ class SumDemo {
             System.out.print(e);
         }
         System.out.println("Sum of the " + n + "numbers:" + Global.sum);
-        sc.close();
     }
 }
