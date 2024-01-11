@@ -1,5 +1,7 @@
 
-/*Write a java program to create two threads. First thread should find the square of the number, second thread should find the sum of the digits of the squared number. */
+/* 
+Write a java program to create two threads. First thread should find the square of the number, second thread should find the sum of the digits of the squared number.
+ */
 import java.util.Scanner;
 
 class Global {

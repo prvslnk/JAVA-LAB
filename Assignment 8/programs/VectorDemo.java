@@ -1,6 +1,7 @@
 
 /*   Write a java program that will compute product of two vector (1D array) using multithreading. The program should read two vectors (of same size) from the user. First thread should multiply the corresponding elements present in the odd index position and second thread should multiply the corresponding elements present in the even index 
 position. Main thread should display the result. */
+
 import java.util.Scanner;
 
 class Global {
@@ -91,6 +92,5 @@ class VectorDemo {
         for (int i = 0; i < size; i++) {
             System.out.print(Global.R[i] + "\t");
         }
-        sc.close();
     }
 }
