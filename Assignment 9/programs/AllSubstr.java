@@ -21,5 +21,6 @@ class AllSubstr {
                 System.out.println(str2);
             }
         }
+        sc.close();
     }
 }
